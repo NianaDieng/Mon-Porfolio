@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #87bdd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  margin: 15px;
+  border-radius: 20px;
+  width: 700px;
+  background-color: rgba(25, 255, 255, 0.6);
+}
+.generator {
+  font-size: 35px;
+}
+.buttons {
+  display: flex;
+  gap: 300px;
+  margin-top: 40px;
+  width: 100%;
+}
+h6 {
+  font: 25px Arial, sans-serif;
+}
+.separation {
+  text-align: center;
+  margin-top: 60px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  width: 100%;
+}
+.newcitation {
+  background-color: #57a7ce;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.newcitation:hover {
+  background-color: #c6d4db;
+}
+img {
+  width: 35px;
+}
+.twitte {
+  background-color: #ffff;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  height: 50px;
+  cursor: pointer;
+}
+.twitte:hover{
+    background-color: #c6d4db;
+    
+}

@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Playfair+Display:ital,wght@0,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  position: fixed;
+  /* background-color: rgb(201, 92, 114); */
+  width: 100%;
+  z-index: 999px;
+}
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .menu li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+.nav-bar .menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  margin-left: 20px;
+  font-size: 35;
+  font-weight: 25px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.nav-bar .menu li a:hover {
+  color: crimson;
+  border-bottom: solid;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: auto;
+}
+.container .logo {
+  width: 100px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 50% 50%;
+  margin-right: 40px;
+}
+.nav-bar .logo-nom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 200px; */
+}
+.nav-bar .logo-nom a {
+  text-decoration: none;
+  text-transform: none;
+  color: #ffffffff;
+}
+/*
+section .title{
+    position: relative;
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+margin-bottom: 60px;
+padding-bottom: 20px;
+} */
+/* css home */
+
+.home {
+  display: flex;
+  /* background: url(../img/bg.jpg)  no-repeat center ; */
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  height: 80vh;
+  min-height: 500px;
+  font-family: "BhuTuka Expanded One", cursive;
+  font-family: "Playfair Display", serif;
+}
+.home .container {
+  margin: auto 0 auto 60px;
+  /* position: fixed;
+    margin-top: 200px; */
+}
+.home .home-content .text1 {
+  font-size: 35px;
+}
+.home .home-content .text2 {
+  font-size: 55px;
+  font-weight: 100px;
+  margin: -3px;
+}
+.home .home-content .text3 {
+  font-size: 35px;
+  margin: 5px 0;
+}
+.home .home-content .text3 span {
+  color: crimson;
+}
+/* style about */
+section {
+  padding: 100px 0;
+}
+.about,
+.skills,
+.realisation ,footer{
+  font-family: "Poppins", sans-serif;
+}
+section .title {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200px;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 160px;
+  height: 4px;
+  background: black;
+  transform: translate(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  padding: 5px;
+  background: #ffffffff;
+  font-size: 20px;
+  color: crimson;
+  transform: translate(-50%);
+}
+.about .title::after {
+  content: "Who i am";
+}
+.skills .title::after {
+  content: "What i know";
+}
+
+.about .about-content .droite img {
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.about .about-content .droite {
+  width: 45%;
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .gauche {
+  width: 55%;
+}
+.about .about-content .gauche .text {
+  font-size: 35px;
+  font-weight: 40px;
+  font-family: "BhuTuka Expanded One", cursive;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+.about .about-content .gauche .text span {
+  color: crimson;
+}
+.about .about-content .gauche p {
+  text-align: justify;
+}
+
+/* style skills */
+.skills .skill-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skill-content .colonne {
+  width: calc(50% - 30px);
+}
+.skills .skill-content .droite .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skill-content .droite p {
+  text-align: justify;
+}
+.skills .skill-content .gauche .bars {
+  margin-bottom: 15px;
+}
+.skills .skill-content .gauche .infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skill-content .gauche span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.skills .skill-content .gauche .line {
+  height: 5px;
+  width: 100%;
+  background-color: lightgrey;
+  position: relative;
+}
+.skills .skill-content .gauche .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  /* width: 80%; */
+  left: 0;
+  top: 0;
+  background-color: crimson;
+}
+.skill-content .gauche .html::before {
+  width: 80%;
+}
+.skill-content .gauche .css::before {
+  width: 40%;
+}
+.skill-content .gauche .js::before {
+  width: 10%;
+}
+.skill-content .gauche .java::before {
+  width: 20%;
+}
+.skill-content .gauche .php::before {
+  width: 30%;
+}
+.skill-content .gauche .sql::before {
+  width: 40%;
+}
+.skill-content .gauche .linux::before {
+  width: 20%;
+}
+.skill-content .gauche .reseau::before {
+  width: 30%;
+}
+/* style .realisation */
+.realisation {
+  color: #ffffffff;
+  background-color: black;
+}
+.realisation .title::before {
+  background-color: #ffffffff;
+}
+.realisation .title::after {
+  content: "My realisation";
+  background-color: black;
+}
+.realisation .secmentation .cardre {
+  background-color: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+}
+.realisation .secmentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  /* height: 50%; */
+}
+.realisation .secmentation .cardre .text {
+  border: 2px solid crimson;
+  background: crimson;
+  height: 50px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 25px;
+  margin-left: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.realisation .secmentation .text a {
+  color: #ffffffff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.realisation .secmentation  .cardre .text  a:hover{
+color: black;
+}
+/* style contact  */
+.contact .title::after {
+  content: "write to me";
+}
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .contact-content .gauche .text{
+  display: flex;
+  justify-content: space-around;
+}
+.contact .contact-content .text img {
+  width: 10%;
+  height: 50%;
+  padding-top: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.contact .contact-content .gauche .infos{
+  margin-top: 20px;
+  margin-right: 60px;
+  font-size: 20px;
+  text-align: justify;
+}
+.contact .droite .text h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact .droite form .fields {
+  display: flex;
+}
+.contact .droite form .field,
+.contact .droite form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.contact .droite form textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .droite form .name {
+  margin-right: 10px;
+}
+.contact .droite form .email {
+  margin-left: 10px;
+}
+.contact .droite form .field input,
+.contact .droite form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins" sans-serif;
+}
+
+textarea {
+  padding-top: 10px;
+  resize: none;
+  outline: none;
+}
+.contact .droite form .button {
+  height: 50px;
+  width: 200px;
+}
+.contact .droite form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.contact .droite form .button button:hover{
+color: crimson;
+background: none;
+}
+/* footer style */
+footer{
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+footer p{
+  margin-top: 55px;
+  color: #ffffffff;
+}

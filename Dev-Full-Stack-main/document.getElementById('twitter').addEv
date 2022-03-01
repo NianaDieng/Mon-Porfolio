@@ -1,0 +1,10 @@
+document.getElementById('twitter').addEventListener("click", function() {
+		tweet = twitter(citations[aleatoire], 140 - auteur.length - hashtag.length - 5);	//	- 5 => espace + "-"
+		window.open('https://twitter.com/intent/tweet?text=' + tweet + " - " + auteur + '&hashtags=' + hashtag, 'twitter', 'height=300, width=550, scrollbars=0, menubar=0');
+	});
+
+	function twitter(str, num) {
+	  if (num <= 3) return str.slice(0, num).concat('...');
+	  else if (num < str.length) return str.slice(0, num-3).concat('...');
+	  return str;
+	}

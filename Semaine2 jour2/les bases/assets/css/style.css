@@ -1,0 +1,68 @@
+ body {
+  background-color: silver;
+  max-width: 960px;
+  margin: auto;
+}
+/* partie flex box */
+ .flex-box .container {
+  display: flex;
+  background-color: antiquewhite;
+  padding: 15px;
+  justify-content: space-around;
+  /* flex-wrap: wrap;  */
+}
+.flex-box .container  .card{
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+}
+.flex-box .container .card-1 {
+  background-color: navy;
+  
+}
+.flex-box .container .card-2 {
+  background-color: brown;
+  
+}
+.flex-box .container .card-3 {
+  background-color: black;
+  
+}
+
+.flex-box .container .card-4 {
+  background-color: forestgreen;
+  
+  /* flex-grow: 2; */
+}
+/* partie grid */
+.grid .container {
+  display: grid;
+  background-color: antiquewhite;
+  padding: 15px;
+  grid-template-columns: repeat(3,1fr);
+  /* justify-content: space-around; */
+  /* flex-wrap: wrap;  */
+}
+.grid .container  .card{
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+}
+.grid .container .card-1 {
+  background-color: navy;
+  
+}
+.grid .container .card-2 {
+  background-color: brown;
+  
+}
+.grid .container .card-3 {
+  background-color: black;
+  
+}
+
+.grid .container .card-4 {
+  background-color: forestgreen;
+  
+  /* flex-grow: 2; */
+}

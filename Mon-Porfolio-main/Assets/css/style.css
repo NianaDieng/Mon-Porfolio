@@ -9,7 +9,7 @@
 
 .nav-bar {
   position: fixed;
-  /* background-color: rgb(201, 92, 114); */
+  background-color: rgb(201, 92, 114);
   width: 100%;
   z-index: 999px;
 }

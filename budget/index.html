@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Application de Gestion de Budget</title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Menu -->
+    <nav class="nav-bar">
+        <div class="container">
+            <a href="#depenseLien">
+                <button class="" id="btn-active">Dépenses</button>
+            </a>
+            <a href="#revenuLien">
+                <button class="">Revenues</button>
+            </a>
+        </div>
+
+    </nav>
+	<div class="accueil"></div>
+    <!-- Partie Revenu -->
+	<main id="revenuLien" class="app">
+		<section class="greeting">
+			<h2 class="title">
+				Gestion Budget
+			</h2>
+		</section>
+		
+		<section class="create-budget">
+			<h3>AJOUTER REVENU</h3>
+			<form id="new-budget-form">
+				<input 
+					type="text" 
+					placeholder="Montant"
+					name="content"
+					id="content" />
+				<h4>Sélectionne le type de revenu ?</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="salaire" /> 
+						<span class="bubble salaire"></span>
+						<div>Salaire</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="bonus" />
+						<span class="bubble bonus"></span>
+						<div>Bonus</div>
+					</label>
+				</div>
+				<input type="submit" value="Envoyer" />
+			</form>
+		</section>
+		
+		<section class="budget-list">
+			<h3>LISTE REVENU</h3>
+			<div class="list" id="budget-list"></div>
+		</section>
+	</main>
+	  <!-- Partie Dépenses -->
+	  <main id="depenseLien" class="app">
+		<section class="greeting">
+			<h2 class="title">
+				Gestion Dépenses
+			</h2>
+		</section>
+		
+		<section class="create-depense">
+			<h3>AJOUTER DEPENSE</h3>
+			<form id="new-depense-form">
+				<input 
+					type="text" 
+					placeholder="Montant"
+					name="container"
+					id="container" />
+				<h4>Sélectionne le type de dépenses ?</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="categorie" id="categorie1" value="manger" /> 
+						<span class="bubble manger"></span>
+						<div>Manger</div>
+					</label>
+					<label>
+						<input type="radio" name="categorie" id="categorie2" value="transport" />
+						<span class="bubble transport"></span>
+						<div>Transport</div>
+					</label>
+					<label>
+						<input type="radio" name="categorie3" id="categorie3" value="Loyer" /> 
+						<span class="bubble loyer"></span>
+						<div>Loyer</div>
+					</label>
+				</div>
+				<input type="submit" value="VALIDER" />
+			</form>
+		</section>
+		
+		<section class="depense-list">
+			<h3>LISTE RDEPENSE</h3>
+			<div class="list" id="depense-list"></div>
+		</section>
+	</main>
+	
+	<script src="depense.js"></script>
+	<script src="revenu.js"></script>
+	<!-- <script src="depense.js"></script> -->
+
+
+</body>
+
+</html>
